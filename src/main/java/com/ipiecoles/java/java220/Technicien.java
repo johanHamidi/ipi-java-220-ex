@@ -1,4 +1,20 @@
 package com.ipiecoles.java.java220;
 
-public class Technicien {
+import org.joda.time.LocalDate;
+
+public class Technicien extends Employe {
+
+    private Integer grade;
+
+    public Technicien(String nom, String prenom, String matricule, LocalDate dateEmbauche, Double salaire) {
+        super(nom, prenom, matricule, dateEmbauche, salaire);
+    }
+
+    public Integer getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Integer grade) {
+        this.grade = grade;
+    }
 }
